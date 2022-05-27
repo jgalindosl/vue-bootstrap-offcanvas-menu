@@ -1,0 +1,24 @@
+{
+    "name": "vue-bootstrap-offcanvas-menu",
+    "description": "Bootstrap offcanvas menu for vue",
+    "version": "0.0.2",
+    "main": "src/vue-bootstrap-offcanvas-menu.vue",
+    "keywords": [
+      "vue",
+      "offcanvas",
+      "bootstrap"
+    ],
+    "homepage": "https://github.com/jgalindosl/vue-bootstrap-offcanvas-menu",
+    "contributors": [
+      "Jose Galindo (https://github.com/jgalindosl)"
+    ],
+    "files": [
+      "dist/"
+    ],
+    "repository": "jgalindosl/vue-bootstrap-offcanvas-menu",
+    "devDependencies": {},
+    "peerDependencies": {
+        "bootstrap" : ">=5.x.x"
+    }
+  }
+  
