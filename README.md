@@ -1,5 +1,12 @@
 # Bootstrap 5 Offcanvas menu
 
+Easily create a recursive n-level menu using this package. Requires
+
+-   bootstrap >=5.2.0
+-   fontawesome >= 5.0.0
+
+A demo project is included with all available functionality.
+
 ## Installation
 
 ```shell
@@ -7,6 +14,11 @@
 ```
 
 ## Usage
+
+Import the package in your vue component. There are 2 optional slots that can be personalized.
+
+-   The first one is the logo and title on the right of the top nav
+-   The other is the top of the menu, that may be used for user information or title
 
 ```vue
 <template>
