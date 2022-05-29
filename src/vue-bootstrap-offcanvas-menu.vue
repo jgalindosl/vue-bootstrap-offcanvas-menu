@@ -20,7 +20,7 @@
                 id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel"
             >
-                <div class="offcanvas-header">
+                <div class="offcanvas-header pb-2">
                     <slot name="header"></slot>
                     <button
                         type="button"
@@ -29,6 +29,7 @@
                         aria-label="Close"
                     ></button>
                 </div>
+                <hr class="text-light border-1 opacity-25 m-0" />
                 <div class="offcanvas-body">
                     <div v-for="(menu, i) in menus" :key="i">
                         <h6 class="offcanvas-title text-light">
@@ -53,9 +54,9 @@
 import Vue from "vue";
 import OffCanvasMenuItem from "./vue-bootstrap-offcanvas-menu-item";
 export default {
-    name: "off-canvas-menu",
+    name: "OffCanvasMenu",
     props: ["menus"],
-    components: {OffCanvasMenuItem},
+    components: { OffCanvasMenuItem },
     mounted() {
         if (localStorage.getItem("csgtmenuselected")) {
             try {

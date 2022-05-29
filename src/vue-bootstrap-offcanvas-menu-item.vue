@@ -26,7 +26,7 @@
 </template>
 <script>
 export default {
-    name: "off-canvas-menu-item",
+    name: "OffCanvasMenuItem",
     props: {
         node: {
             type: Object,

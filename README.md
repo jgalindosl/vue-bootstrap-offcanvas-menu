@@ -13,6 +13,26 @@ A demo project is included with all available functionality.
     npm install vue-bootstrap-offcanvas-menu
 ```
 
+Include globally on your `app.js` file
+
+```
+import OffCanvasMenu from 'vue-bootstrap-offcanvas-menu';
+Vue.component("OffCanvasMenu", OffCanvasMenu);
+```
+
+or locally
+
+```
+<script>
+import OffCanvasMenu from "vue-bootstrap-offcanvas-menu";
+export default {
+    components: {
+        OffCanvasMenu,
+    },
+}
+</script>
+```
+
 ## Usage
 
 Import the package in your vue component. There are 2 optional slots that can be personalized.
@@ -50,32 +70,32 @@ export default {
                     nodes: [
                         {
                             id: 1,
-                            label: "Hola",
+                            label: "Level 1 Option 1",
                             icon: "fa fa-home",
                             url: "/",
                             children: [],
                         },
                         {
                             id: 2,
-                            label: "Otro boton",
+                            label: "Level 1 Option 2",
                             icon: "fa fa-star",
                             url: "",
                             children: [
                                 {
                                     id: 3,
-                                    label: "adios",
+                                    label: "Level 2 Option 1",
                                     icon: "fa fa-star",
                                     url: "/adios",
                                     children: [
                                         {
                                             id: 30,
-                                            label: "adiossss",
+                                            label: "Level 3 Option 1",
                                             icon: "fa fa-star",
                                             url: "/adiossss",
                                         },
                                         {
                                             id: 31,
-                                            label: "holllaaaa",
+                                            label: "Level 3 Option 2",
                                             icon: "fa fa-star",
                                             url: "/holaaaa",
                                         },
@@ -85,13 +105,13 @@ export default {
                         },
                         {
                             id: 4,
-                            label: "LEVEL1",
+                            label: "Level 1 Option 3",
                             icon: "fa fa-user",
                             url: "",
                             children: [
                                 {
                                     id: 5,
-                                    label: "LEVEL2",
+                                    label: "Level 2 Option 1",
                                     icon: "fa fa-star",
                                     url: "/talvez",
                                 },
@@ -100,20 +120,20 @@ export default {
                     ],
                 },
                 {
-                    title: "USUARIO",
+                    title: "User",
                     nodes: [
                         {
                             id: 9000,
-                            label: "Perfil",
+                            label: "Profile",
                             icon: null,
-                            url: "/",
+                            url: "/profile",
                             children: [],
                         },
                         {
                             id: 9500,
                             label: "Logout",
                             icon: "fa fa-star",
-                            url: "/",
+                            url: "/logout",
                             children: [],
                         },
                     ],
