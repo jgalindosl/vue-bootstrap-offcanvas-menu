@@ -16,8 +16,5 @@
         "src/"
     ],
     "repository": "jgalindosl/vue-bootstrap-offcanvas-menu",
-    "peerDependencies": {
-        "bootstrap" : "^5.0.0"
-    }
   }
   
