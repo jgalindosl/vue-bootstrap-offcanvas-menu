@@ -13,7 +13,7 @@
             <span v-if="hasChildren" class="fas fa-solid fa-angle-down float-end mt-1" />
         </button>
         <div :class="{ collapse: !selected }" v-if="hasChildren" :id="`node` + node.id">
-            <OffCanvasMenuItem
+            <off-canvas-menu-item
                 v-for="child in node.children"
                 :key="child.id"
                 :node="child"
@@ -26,7 +26,7 @@
 </template>
 <script>
 export default {
-    name: "OffCanvasMenuItem",
+    name: "off-canvas-menu-item",
     props: {
         node: {
             type: Object,

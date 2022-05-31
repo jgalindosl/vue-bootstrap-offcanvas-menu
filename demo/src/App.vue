@@ -1,6 +1,6 @@
 <template>
     <div id="app" class="bg-light pb-4">
-        <OffCanvasMenu :menus="menus">
+        <off-canvas-menu :menus="menus">
             <template v-slot:brand>
                 <img
                     src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg"
@@ -12,7 +12,7 @@
                 Menu demo
             </template>
             <template v-slot:header> Header content goes here </template>
-        </OffCanvasMenu>
+        </off-canvas-menu>
         <div class="container mt-5 pt-4">
             Vue Bootstrap Offcanvas Menu is using the following data:<br /><br />
             <div class="card">

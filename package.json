@@ -1,7 +1,7 @@
 {
     "name": "vue-bootstrap-offcanvas-menu",
     "description": "Bootstrap offcanvas menu for vue",
-    "version": "0.0.5",
+    "version": "0.0.7",
     "main": "src/vue-bootstrap-offcanvas-menu.vue",
     "keywords": [
         "vue",
@@ -16,9 +16,6 @@
         "src/"
     ],
     "repository": "jgalindosl/vue-bootstrap-offcanvas-menu",
-    "dependencies": {
-        "bootstrap" : "^5.0.0" 
-    },
     "peerDependencies": {
         "bootstrap" : "^5.0.0"
     }
